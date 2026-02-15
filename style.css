@@ -1,62 +1,37 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-    text-align: center;
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
 }
 
-.container {
-    position: relative;
-    top: 25vh;
-    z-index: 2;
+.text {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
 }
 
-.title {
-    font-size: 40px;
-    color: white;
-    animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-    from { text-shadow: 0 0 10px white; }
-    to { text-shadow: 0 0 25px yellow; }
-}
-
-#typing {
-    color: white;
-    font-size: 24px;
-    margin-top: 20px;
+h1 {
+  font-size: 40px;
+  color: pink;
+  text-shadow: 0 0 20px pink;
 }
 
 button {
-    padding: 12px 25px;
-    font-size: 18px;
-    border: none;
-    background: #ff4d6d;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: 0.3s;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  background: hotpink;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
 }
 
 button:hover {
-    background: #ff1e4d;
-    transform: scale(1.1);
-}
-
-.hidden {
-    display: none;
-    margin-top: 20px;
-    font-size: 22px;
-    color: white;
-}
-
-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  background: deeppink;
+  transform: scale(1.1);
 }
